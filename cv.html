@@ -1,0 +1,97 @@
+<HTML xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<HEAD>
+    <META http-equiv="Content-Type" content="text/html;charset=gb2312">
+    <TITLE>Welcome to Fanghui Xiao Homepage</TITLE>
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache, must-revalidate">
+    <meta http-equiv="expires" content="0">
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+    <meta name="viewport" content="user-scalable=no">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1">
+    <link rel="stylesheet" href="css/material.min.css">
+    <link rel="stylesheet" href="css/cvPage.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="js/material.min.js"></script>
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/publicAction.js"></script>
+    <script>
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+            //console.log(document.getElementById("mbody"));
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                document.getElementById("mhead").classList.add("header_bar");
+                Array.from(document.getElementsByClassName("mButton")).forEach(
+                    function(element, index, array) {
+                        element.classList.add("mButton_bar");
+                    }
+                );
+            } else {
+                document.getElementById("mhead").classList.remove("header_bar");
+                Array.from(document.getElementsByClassName("mButton")).forEach(
+                    function(element, index, array) {
+                        element.classList.remove("mButton_bar");
+                    }
+                );
+            }
+        }
+    </script>
+</HEAD>
+<BODY>
+    <div id="homePage">
+        <div id='mhead'>
+            <div id='mName' onClick="jumpPage(this.id);">FANGHUI XIAO</div>
+            <div id='mMenu'>
+                <button id='homeBtn' class="mButton mdl-button mdl-js-button mdl-js-ripple-effect" onClick="jumpPage(this.id);">
+                    Home
+                </button>
+                <button id='researchBtn' class="mButton mdl-button mdl-js-button mdl-js-ripple-effect" onClick="jumpPage(this.id);">
+                    Research Projects
+                </button>
+                <button id='publicationsBtn' class="mButton mdl-button mdl-js-button mdl-js-ripple-effect" onClick="jumpPage(this.id);">
+                    Publications
+                </button>
+                <button id='teachingBtn' class="mButton mdl-button mdl-js-button mdl-js-ripple-effect" onClick="jumpPage(this.id);">
+                    Teaching & Services
+                </button>
+                <button id='cvBtn' class="mButton btnAct mdl-button mdl-js-button mdl-js-ripple-effect" onClick="jumpPage(this.id);">
+                    CV
+                </button>
+            </div>
+        </div>
+        <div id='mbody'>
+            <div class="cvTitleOutBx">
+                <div class="cvTitleBx">
+                    <div class="lineBx"></div>
+                    <div class="cvTitle">Curriculum Vitae</div>
+                    <div class="lineBx"></div>
+                </div>
+            </div>
+            <div class="cvContentBx">
+                <iframe src="pdf/cv.pdf" width="100%" height="90%"></iframe>
+            </div>
+        </div>
+        <div id='mfoot'>
+            <div id='mIconBx'>
+                <div class='linkBx'>
+                    <a href="https://www.linkedin.com/in/fanghui-xiao0304/">
+                        <img class='linkIcon' src="css/images/LinkedIn_icon.png">
+                    </a>
+                </div>
+                <div class='linkBx'>
+                    <a href="https://scholar.google.com/citations?user=U2pZasgAAAAJ&hl=en">
+                        <img class='linkIcon' src="css/images/GoogleScholar_icon.png">
+                    </a>
+                </div>
+                <div class='linkBx'>
+                    <a href="https://www.researchgate.net/profile/Fanghui-Xiao/">
+                        <img class='linkIcon' src="css/images/ResearchGate_icon.png">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</BODY>
+</HTML>
