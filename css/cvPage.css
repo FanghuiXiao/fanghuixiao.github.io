@@ -92,8 +92,49 @@ div{
     position: relative;
 }
 .cvContentBx{
-    width: 80%;
-    margin: 0 10% 50px 10%;
+    width: 70%;
+    margin: 0 15% 50px 15%;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.cvBx1, .cvBx2{
+    margin: 0 auto 50px auto;
+    width: 300px;
+    background-color: #fbf7f7;
+    display: inline-block;
+}
+.cvBx1 > .mdl-card__title {
+    color: #000;
+    height: 100px;
+    background: url('images/cv_title1.png') top / cover;
+}
+.cvBx2 > .mdl-card__title {
+    color: #000;
+    height: 100px;
+    background: url('images/cv_title2.png') top / cover;
+}
+.cvListHead{
+    font-family: 'Rozha One', serif;
+}
+.cvList{
+
+}
+.cvListTxt{
+    cursor: pointer;
+    font-family: 'IBM Plex Serif', serif;
+}
+.pdfIconBx{
+    margin: 0 auto;
+}
+.iconExample{
+    height: auto;
+    max-width: unset;
+    vertical-align: middle;
+    width: 100px;
+}
+.iconExampleTxt{
+    font-size: 18px;
+    text-align: center;
 }
 #mfoot{
     width: 100%;
