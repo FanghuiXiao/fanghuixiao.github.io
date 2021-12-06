@@ -16,30 +16,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Rozha+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
     <script type="text/javascript" src="js/material.min.js"></script>
     <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/teachingSetup.js"></script>
     <script type="text/javascript" src="js/publicAction.js"></script>
-    <script>
-        window.onscroll = function() {scrollFunction()};
-        function scrollFunction() {
-            //console.log(document.getElementById("mbody"));
-            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-                document.getElementById("mhead").classList.add("header_bar");
-                Array.from(document.getElementsByClassName("mButton")).forEach(
-                    function(element, index, array) {
-                        element.classList.add("mButton_bar");
-                    }
-                );
-            } else {
-                document.getElementById("mhead").classList.remove("header_bar");
-                Array.from(document.getElementsByClassName("mButton")).forEach(
-                    function(element, index, array) {
-                        element.classList.remove("mButton_bar");
-                    }
-                );
-            }
-        }
-    </script>
 </HEAD>
 <BODY>
     <div id="homePage">
@@ -67,225 +48,286 @@
             <div class="teachingTitleOutBx">
                 <div class="teachingTitleBx">
                     <div class="lineBx"></div>
-                    <div class="teachingTitle">Teaching</div>
+                    <div class="teachingTitle">Teaching & Services</div>
                     <div class="lineBx"></div>
                 </div>
             </div>
-            <div class="teachingBx1 mdl-card mdl-shadow--2dp">
-                <div class="mdl-card__title mdl-card--expand">
-                    <h2 class="teachingListHead mdl-card__title-text">Guest Lecturer<br>School of Computing and Information, University of Pittsburgh</h2>
-                </div>
-                <div class="cardGrid1 mdl-card__actions mdl-card--border">
-                    <ul class="teachingList mdl-list">
-                        <li class="mdl-list__item">
-                            <span class="teachingListTxt mdl-list__item-primary-content">
-                                <img class="material-icons mdl-list__item-icon" src="css/images/Teaching1_icon.png"/>
-                                Data Visualization. LIS 2678 Data Science for Library and Information Professionals (Summer 2018)
-                            </span>
-                        </li>
-                        <li class="mdl-list__item">
-                            <span class="teachingListTxt mdl-list__item-primary-content">
-                                <img class="material-icons mdl-list__item-icon" src="css/images/Teaching1_icon.png"/>
-                                Introduction of Open Government Data.  LIS 2975 Research Data Management (Fall 2017)
-                            </span>
-                        </li>
-                    </ul>
-                    <div id="examplePdf" onClick="popupLink(this.id);">
-                        <div class="pdfIconBx">
-                            <img class="iconExample" src="css/images/pdf.png">
+            <div class="teachingContentOutBx">
+                <div class="teachingContentBx1 teachingContentBxY teachingContentBxR">
+                    <div class="teachingContentBx">
+                        <div class="teachingHead1">
+                            Guest Lecturer
                         </div>
-                        <div class='iconExampleTxt'>Data Visualization</div>
+                        <div class="teachingHead2">
+                            School of Computing and Information
+                        </div>
+                        <div class="teachingHead2">
+                            University of Pittsburgh
+                        </div>
+                    </div>
+                </div>
+                <div class="teachingContentBx2 teachingContentBxW teachingContentBxL">
+                    <div class="teachingContentBx">
+                        <ul class="mdl-list">
+                            <li class="mdl-list__item">
+                                <span class="teachingListTxt mdl-list__item-primary-content">
+                                    <img class="material-icons mdl-list__item-icon" src="css/images/Teaching1_icon.png"/>
+                                    Data Visualization. LIS 2678 Data Science for Library and Information Professionals (Summer 2018)
+                                </span>
+                            </li>
+                            <li class="mdl-list__item">
+                                <span class="teachingListTxt mdl-list__item-primary-content">
+                                    <img class="material-icons mdl-list__item-icon" src="css/images/Teaching1_icon.png"/>
+                                    Introduction of Open Government Data.  LIS 2975 Research Data Management (Fall 2017)
+                                </span>
+                            </li>
+                            <li class="mdl-list__item">
+                                <span id="examplePdf" onClick="popupLink(this.id);" class="pdfLinkTxt mdl-list__item-primary-content">
+                                    Download Data Visualization PDF
+                                </span>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <div class="teachingBx2 mdl-card mdl-shadow--2dp">
-                <div class="mdl-card__title mdl-card--expand">
-                    <h2 class="teachingListHead mdl-card__title-text">Instructor<br>Baidu Co., Ltd, Beijing, China.  Dec. 2006 ~ Feb. 2010</h2>
-                </div>
-                <div class="cardGrid2 mdl-card__actions mdl-card--border">
-                    <ul id="listBx" class="teachingList mdl-list">
-                        <li class="mdl-list__item">
-                            <span class="teachingListTxt mdl-list__item-primary-content">
-                                <img class="material-icons mdl-list__item-icon" src="css/images/Teaching1_icon.png"/>
-                                Company Culture Introduction
-                            </span>
-                        </li>
-                        <li class="mdl-list__item">
-                            <span class="teachingListTxt mdl-list__item-primary-content">
-                                <img class="material-icons mdl-list__item-icon" src="css/images/Teaching1_icon.png"/>
-                                Products Introduction
-                            </span>
-                        </li>
-                        <li class="mdl-list__item">
-                            <span class="teachingListTxt mdl-list__item-primary-content">
-                                <img class="material-icons mdl-list__item-icon" src="css/images/Teaching1_icon.png"/>
-                                Basis of Internet Technology
-                            </span>
-                        </li>
-                        <li class="mdl-list__item">
-                            <span class="teachingListTxt mdl-list__item-primary-content">
-                                <img class="material-icons mdl-list__item-icon" src="css/images/Teaching1_icon.png"/>
-                                Social Etiquette
-                            </span>
-                        </li>
-                        <li class="mdl-list__item">
-                            <span class="teachingListTxt mdl-list__item-primary-content">
-                                <img class="material-icons mdl-list__item-icon" src="css/images/Teaching1_icon.png"/>
-                                Stress Management
-                            </span>
-                        </li>
-                    </ul>
-                    <div id="photoBx1">
-                        <img class="photoBaidu" src="css/images/Baidu_1.png">
-                    </div>
-                    <div id="photoBx2">
-                        <img class="photoBaidu" src="css/images/Baidu_2.png">
+            <div class="teachingContentOutBx">
+                <div class="teachingContentBx1 teachingContentBxW teachingContentBxL">
+                    <div class="teachingContentBx">
+                        <ul class="mdl-list">
+                            <li class="mdl-list__item">
+                                <span class="teachingListTxt mdl-list__item-primary-content">
+                                    <img class="material-icons mdl-list__item-icon" src="css/images/Teaching1_icon.png"/>
+                                    Company Culture Introduction
+                                </span>
+                            </li>
+                            <li class="mdl-list__item">
+                                <span class="teachingListTxt mdl-list__item-primary-content">
+                                    <img class="material-icons mdl-list__item-icon" src="css/images/Teaching1_icon.png"/>
+                                    Products Introduction
+                                </span>
+                            </li>
+                            <li class="mdl-list__item">
+                                <span class="teachingListTxt mdl-list__item-primary-content">
+                                    <img class="material-icons mdl-list__item-icon" src="css/images/Teaching1_icon.png"/>
+                                    Basis of Internet Technology
+                                </span>
+                            </li>
+                            <li class="mdl-list__item">
+                                <span class="teachingListTxt mdl-list__item-primary-content">
+                                    <img class="material-icons mdl-list__item-icon" src="css/images/Teaching1_icon.png"/>
+                                    Social Etiquette
+                                </span>
+                            </li>
+                            <li class="mdl-list__item">
+                                <span class="teachingListTxt mdl-list__item-primary-content">
+                                    <img class="material-icons mdl-list__item-icon" src="css/images/Teaching1_icon.png"/>
+                                    Stress Management
+                                </span>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-            </div>
-            <div class="teachingBx3 mdl-card mdl-shadow--2dp">
-                <div class="mdl-card__title mdl-card--expand">
-                    <h2 class="teachingListHead mdl-card__title-text">Teaching Assistant<br>School of Computing and Information, University of Pittsburgh</h2>
-                </div>
-                <div class="mdl-card__actions mdl-card--border">
-                    <ul class="teachingList mdl-list">
-                        <li class="mdl-list__item">
-                            <span class="teachingListTxt mdl-list__item-primary-content">
-                                <img class="material-icons mdl-list__item-icon" src="css/images/Teaching1_icon.png"/>
-                                LIS 2020 Lifecycles of Data and Information (Fall 2019, 2020, 2021)
-                            </span>
-                        </li>
-                        <li class="mdl-list__item">
-                            <span class="teachingListTxt mdl-list__item-primary-content">
-                                <img class="material-icons mdl-list__item-icon" src="css/images/Teaching1_icon.png"/>
-                                LIS 2030 Data and Information in Systems (Spring 2021)
-                            </span>
-                        </li>
-                        <li class="mdl-list__item">
-                            <span class="teachingListTxt mdl-list__item-primary-content">
-                                <img class="material-icons mdl-list__item-icon" src="css/images/Teaching1_icon.png"/>
-                                LIS 2020 Lifecycles of Data and Information Online (Fall 2020)
-                            </span>
-                        </li>
-                        <li class="mdl-list__item">
-                            <span class="teachingListTxt mdl-list__item-primary-content">
-                                <img class="material-icons mdl-list__item-icon" src="css/images/Teaching1_icon.png"/>
-                                Curriculum development: LIS 2021 Identifying Information Needs in Knowledge Organizations online course (Spring 2020)
-                            </span>
-                        </li>
-                        <li class="mdl-list__item">
-                            <span class="teachingListTxt mdl-list__item-primary-content">
-                                <img class="material-icons mdl-list__item-icon" src="css/images/Teaching1_icon.png"/>
-                                LIS 2332 Resources and Services for Adults (Spring 2019)
-                            </span>
-                        </li>
-                        <li class="mdl-list__item">
-                            <span class="teachingListTxt mdl-list__item-primary-content">
-                                <img class="material-icons mdl-list__item-icon" src="css/images/Teaching1_icon.png"/>
-                                LIS 2323 Resources for Young Adults (Spring 2019)
-                            </span>
-                        </li>
-                        <li class="mdl-list__item">
-                            <span class="teachingListTxt mdl-list__item-primary-content">
-                                <img class="material-icons mdl-list__item-icon" src="css/images/Teaching1_icon.png"/>
-                                LIS 2005 Knowledge Organization (Fall 2018)
-                            </span>
-                        </li>
-                        <li class="mdl-list__item">
-                            <span class="teachingListTxt mdl-list__item-primary-content">
-                                <img class="material-icons mdl-list__item-icon" src="css/images/Teaching1_icon.png"/>
-                                LIS 2186 Information Policy (Fall 2018)
-                            </span>
-                        </li>
-                        <li class="mdl-list__item">
-                            <span class="teachingListTxt mdl-list__item-primary-content">
-                                <img class="material-icons mdl-list__item-icon" src="css/images/Teaching1_icon.png"/>
-                                LIS 2678 Data Science for Library and Information Professionals (Summer 2018)
-                            </span>
-                        </li>
-                        <li class="mdl-list__item">
-                            <span class="teachingListTxt mdl-list__item-primary-content">
-                                <img class="material-icons mdl-list__item-icon" src="css/images/Teaching1_icon.png"/>
-                                LIS 2184 Intellectual Property and Open Movements (Summer 2018)
-                            </span>
-                        </li>
-                        <li class="mdl-list__item">
-                            <span class="teachingListTxt mdl-list__item-primary-content">
-                                <img class="material-icons mdl-list__item-icon" src="css/images/Teaching1_icon.png"/>
-                                LIS 2110 Research Method in Library and Information Science (Spring 2018)
-                            </span>
-                        </li>
-                        <li class="mdl-list__item">
-                            <span class="teachingListTxt mdl-list__item-primary-content">
-                                <img class="material-icons mdl-list__item-icon" src="css/images/Teaching1_icon.png"/>
-                                LIS 2975 Research Data Management (Fall 2017)
-                            </span>
-                        </li>
-                    </ul>
+                <div class="teachingContentBx2 teachingContentBxY teachingContentBxL">
+                    <div class="teachingContentBx">
+                        <div class="teachingHead1">
+                            Instructor
+                        </div>
+                        <div class="teachingHead2">
+                            Baidu Co., Ltd, Beijing, China
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="teachingTitleOutBx">
-                <div class="teachingTitleBx">
-                    <div class="lineBx"></div>
-                    <div class="teachingTitle">Academic Services</div>
-                    <div class="lineBx"></div>
+            <div class="teachingContentOutBx">
+                <div class="teachingContentBx1 teachingContentBxY teachingContentBxR">
+                    <div class="teachingContentBx">
+                        <div class="teachingHead1">
+                            Teaching Assistant
+                        </div>
+                        <div class="teachingHead2">
+                            School of Computing and Information
+                        </div>
+                        <div class="teachingHead2">
+                            University of Pittsburgh
+                        </div>
+                    </div>
+                </div>
+                <div class="teachingContentBx2 teachingContentBxW teachingContentBxL">
+                    <div class="teachingContentBx">
+                        <ul id="teachingContent1" class="mdl-list">
+                            <li class="mdl-list__item">
+                                <span class="teachingListTxt mdl-list__item-primary-content">
+                                    <img class="material-icons mdl-list__item-icon" src="css/images/Teaching1_icon.png"/>
+                                    LIS 2020 Lifecycles of Data and Information (Fall 2019, 2020, 2021)
+                                </span>
+                            </li>
+                            <li class="mdl-list__item">
+                                <span class="teachingListTxt mdl-list__item-primary-content">
+                                    <img class="material-icons mdl-list__item-icon" src="css/images/Teaching1_icon.png"/>
+                                    LIS 2030 Data and Information in Systems (Spring 2021)
+                                </span>
+                            </li>
+                            <li class="mdl-list__item">
+                                <span class="teachingListTxt mdl-list__item-primary-content">
+                                    <img class="material-icons mdl-list__item-icon" src="css/images/Teaching1_icon.png"/>
+                                    LIS 2020 Lifecycles of Data and Information Online (Fall 2020)
+                                </span>
+                            </li>
+                            <li class="mdl-list__item">
+                                <span class="teachingListTxt mdl-list__item-primary-content">
+                                    <img class="material-icons mdl-list__item-icon" src="css/images/Teaching1_icon.png"/>
+                                    Curriculum development: LIS 2021 Identifying Information Needs in Knowledge Organizations online course (Spring 2020)
+                                </span>
+                            </li>
+                            <li class="lessList1 mdl-list__item">
+                                <span id="moreBtn_1" onClick="showMore(this.id);" class="pdfLinkTxt mdl-list__item-primary-content">
+                                    More Accomplishment
+                                </span>
+                            </li>
+                            <li class="moreList1 mdl-list__item">
+                                <span class="teachingListTxt mdl-list__item-primary-content">
+                                    <img class="material-icons mdl-list__item-icon" src="css/images/Teaching1_icon.png"/>
+                                    LIS 2332 Resources and Services for Adults (Spring 2019)
+                                </span>
+                            </li>
+                            <li class="moreList1 mdl-list__item">
+                                <span class="teachingListTxt mdl-list__item-primary-content">
+                                    <img class="material-icons mdl-list__item-icon" src="css/images/Teaching1_icon.png"/>
+                                    LIS 2323 Resources for Young Adults (Spring 2019)
+                                </span>
+                            </li>
+                            <li class="moreList1 mdl-list__item">
+                                <span class="teachingListTxt mdl-list__item-primary-content">
+                                    <img class="material-icons mdl-list__item-icon" src="css/images/Teaching1_icon.png"/>
+                                    LIS 2005 Knowledge Organization (Fall 2018)
+                                </span>
+                            </li>
+                            <li class="moreList1 mdl-list__item">
+                                <span class="teachingListTxt mdl-list__item-primary-content">
+                                    <img class="material-icons mdl-list__item-icon" src="css/images/Teaching1_icon.png"/>
+                                    LIS 2186 Information Policy (Fall 2018)
+                                </span>
+                            </li>
+                            <li class="moreList1 mdl-list__item">
+                                <span class="teachingListTxt mdl-list__item-primary-content">
+                                    <img class="material-icons mdl-list__item-icon" src="css/images/Teaching1_icon.png"/>
+                                    LIS 2678 Data Science for Library and Information Professionals (Summer 2018)
+                                </span>
+                            </li>
+                            <li class="moreList1 mdl-list__item">
+                                <span class="teachingListTxt mdl-list__item-primary-content">
+                                    <img class="material-icons mdl-list__item-icon" src="css/images/Teaching1_icon.png"/>
+                                    LIS 2184 Intellectual Property and Open Movements (Summer 2018)
+                                </span>
+                            </li>
+                            <li class="moreList1 mdl-list__item">
+                                <span class="teachingListTxt mdl-list__item-primary-content">
+                                    <img class="material-icons mdl-list__item-icon" src="css/images/Teaching1_icon.png"/>
+                                    LIS 2110 Research Method in Library and Information Science (Spring 2018)
+                                </span>
+                            </li>
+                            <li class="moreList1 mdl-list__item">
+                                <span class="teachingListTxt mdl-list__item-primary-content">
+                                    <img class="material-icons mdl-list__item-icon" src="css/images/Teaching1_icon.png"/>
+                                    LIS 2975 Research Data Management (Fall 2017)
+                                </span>
+                            </li>
+                            <li class="moreList1 mdl-list__item">
+                                <span id="lessBtn_1" onClick="showLess(this.id);" class="pdfLinkTxt mdl-list__item-primary-content">
+                                    Less
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="teachingBx4 mdl-card mdl-shadow--2dp">
-                <div class="mdl-card__title mdl-card--expand">
-                    <h2 class="teachingListHead mdl-card__title-text">Academic Services</h2>
+            <div class="teachingContentOutBx">
+                <div class="teachingContentBx1 teachingContentBxW teachingContentBxL">
+                    <div class="teachingContentBx">
+                        <ul id="teachingContent2" class="mdl-list">
+                            <li class="mdl-list__item">
+                                <span class="teachingListTxt mdl-list__item-primary-content">
+                                    <img class="material-icons mdl-list__item-icon" src="css/images/Teaching2_icon.png"/>
+                                    Reviewer of ACM Conference on Human Factors in Computing Systems (CHI), 2021
+                                </span>
+                            </li>
+                            <li class="mdl-list__item">
+                                <span class="teachingListTxt mdl-list__item-primary-content">
+                                    <img class="material-icons mdl-list__item-icon" src="css/images/Teaching2_icon.png"/>
+                                    Reviewer of Journal of PLOS ONE, 2021
+                                </span>
+                            </li>
+                            <li class="mdl-list__item">
+                                <span class="teachingListTxt mdl-list__item-primary-content">
+                                    <img class="material-icons mdl-list__item-icon" src="css/images/Teaching2_icon.png"/>
+                                    Reviewer of Aslib Journal of Information Management, 2021
+                                </span>
+                            </li>
+                            <li class="mdl-list__item">
+                                <span class="teachingListTxt mdl-list__item-primary-content">
+                                    <img class="material-icons mdl-list__item-icon" src="css/images/Teaching2_icon.png"/>
+                                    Reviewer of Journal of The Association for Information Science and Technology (JASIST), 2020
+                                </span>
+                            </li>
+                            <li class="lessList2 mdl-list__item">
+                                <span id="moreBtn_2" onClick="showMore(this.id);" class="pdfLinkTxt mdl-list__item-primary-content">
+                                    More Accomplishment
+                                </span>
+                            </li>
+                            <li class="moreList2 mdl-list__item">
+                                <span class="teachingListTxt mdl-list__item-primary-content">
+                                    <img class="material-icons mdl-list__item-icon" src="css/images/Teaching2_icon.png"/>
+                                    Reviewer of ASIS&T Asia-Pacific Regional Conference, 2020
+                                </span>
+                            </li>
+                            <li class="moreList2 mdl-list__item">
+                                <span class="teachingListTxt mdl-list__item-primary-content">
+                                    <img class="material-icons mdl-list__item-icon" src="css/images/Teaching2_icon.png"/>
+                                    Member of ASIS&T, 2019-2020
+                                </span>
+                            </li>
+                            <li class="moreList2 mdl-list__item">
+                                <span class="teachingListTxt mdl-list__item-primary-content">
+                                    <img class="material-icons mdl-list__item-icon" src="css/images/Teaching2_icon.png"/>
+                                    Member of SIGIR (ACM), 2019-2021
+                                </span>
+                            </li>
+                            <li class="moreList2 mdl-list__item">
+                                <span class="teachingListTxt mdl-list__item-primary-content">
+                                    <img class="material-icons mdl-list__item-icon" src="css/images/Teaching2_icon.png"/>
+                                    Student volunteer, 13th International Digital Curation Conference, 2018
+                                </span>
+                            </li>
+                            <li class="moreList2 mdl-list__item">
+                                <span id="lessBtn_2" onClick="showLess(this.id);" class="pdfLinkTxt mdl-list__item-primary-content">
+                                    Less
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="mdl-card__actions mdl-card--border">
-                    <ul class="teachingList mdl-list">
-                        <li class="mdl-list__item">
-                            <span class="teachingListTxt mdl-list__item-primary-content">
-                                <img class="material-icons mdl-list__item-icon" src="css/images/Teaching2_icon.png"/>
-                                Reviewer of ACM Conference on Human Factors in Computing Systems (CHI), 2021
-                            </span>
-                        </li>
-                        <li class="mdl-list__item">
-                            <span class="teachingListTxt mdl-list__item-primary-content">
-                                <img class="material-icons mdl-list__item-icon" src="css/images/Teaching2_icon.png"/>
-                                Reviewer of Journal of PLOS ONE, 2021
-                            </span>
-                        </li>
-                        <li class="mdl-list__item">
-                            <span class="teachingListTxt mdl-list__item-primary-content">
-                                <img class="material-icons mdl-list__item-icon" src="css/images/Teaching2_icon.png"/>
-                                Reviewer of Aslib Journal of Information Management, 2021
-                            </span>
-                        </li>
-                        <li class="mdl-list__item">
-                            <span class="teachingListTxt mdl-list__item-primary-content">
-                                <img class="material-icons mdl-list__item-icon" src="css/images/Teaching2_icon.png"/>
-                                Reviewer of Journal of The Association for Information Science and Technology (JASIST), 2020
-                            </span>
-                        </li>
-                        <li class="mdl-list__item">
-                            <span class="teachingListTxt mdl-list__item-primary-content">
-                                <img class="material-icons mdl-list__item-icon" src="css/images/Teaching2_icon.png"/>
-                                Reviewer of ASIS&T Asia-Pacific Regional Conference, 2020
-                            </span>
-                        </li>
-                        <li class="mdl-list__item">
-                            <span class="teachingListTxt mdl-list__item-primary-content">
-                                <img class="material-icons mdl-list__item-icon" src="css/images/Teaching2_icon.png"/>
-                                Member of ASIS&T, 2019-2020
-                            </span>
-                        </li>
-                        <li class="mdl-list__item">
-                            <span class="teachingListTxt mdl-list__item-primary-content">
-                                <img class="material-icons mdl-list__item-icon" src="css/images/Teaching2_icon.png"/>
-                                Member of SIGIR (ACM), 2019-2021
-                            </span>
-                        </li>
-                        <li class="mdl-list__item">
-                            <span class="teachingListTxt mdl-list__item-primary-content">
-                                <img class="material-icons mdl-list__item-icon" src="css/images/Teaching2_icon.png"/>
-                                Student volunteer, 13th International Digital Curation Conference, 2018
-                            </span>
-                        </li>
-                    </ul>
+                <div class="teachingContentBx2 teachingContentBxY teachingContentBxL">
+                    <div class="teachingContentBx">
+                        <div class="teachingHead1">
+                            Academic Services
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="teachingContentOutBx">
+                <div class="teachingContentBx1 teachingContentBxW teachingContentBxR">
+                    <div class="teachingContentBx">
+                        <div id="photoBx1">
+                            <img class="photoBaidu" src="css/images/Baidu_1.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="teachingContentBx2 teachingContentBxW teachingContentBxL">
+                    <div class="teachingContentBx">
+                        <div id="photoBx2">
+                            <img class="photoBaidu" src="css/images/Baidu_2.png">
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="paddingBx"></div>
