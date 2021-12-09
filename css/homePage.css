@@ -113,22 +113,13 @@ div{
     line-height: 1.6;
     font-family: 'Rozha One', serif;
 }
-.introHeadTxt{
-    margin-bottom: 10px;
-    align-self: center;
-    font-size: 22px;
-    font-weight: bolder;
-    text-align: center;
-    line-height: 1.6;
-    font-family: 'Rozha One', serif;
-}
 .introTxt{
     margin-top: 40px;
     word-break: break-word;
     align-self: center;
     font-size: 18px;
     line-height: 1.6;
-    font-family: 'IBM Plex Serif', serif;
+    font-family: 'Rubik', sans-serif;
     text-align: justify;
 }
 #mottoBx{
@@ -154,7 +145,7 @@ div{
 }
 #mickyBx{
     float: left;
-    width: 10%;
+    width: 135px;
     position: relative;
     left: 10%;
 }

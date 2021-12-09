@@ -180,6 +180,8 @@ div{
 .pdfLinkTxt{
     font-size: 16px;
     color: #0645AD;
+    cursor: pointer;
+    text-decoration: underline !important;
 }
 .moreList1, .moreList2, .hideList{
     display: none;
