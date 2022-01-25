@@ -103,78 +103,93 @@ div{
     padding: 0 100px;
     color: white;
 }
-.teachingBx1, .teachingBx2, .teachingBx3, .teachingBx4{
-    margin: 0 auto 50px auto;
+.teachingContentOutBx{
+    width: 72%;
+    margin: 0 14%;
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
-.teachingBx1.mdl-card, .teachingBx2.mdl-card, .teachingBx3.mdl-card, .teachingBx4.mdl-card{
-    width: 80%;
-    background-color: #fbf7f7;
+.teachingHead1{
+    font-size: 24px;
+    font-weight: 900;
+    color: #030303;
+    margin-bottom: 24px;
+    font-family: 'Rubik', sans-serif;
 }
-.teachingBx1 > .mdl-card__title {
-    color: #000;
-    height: 200px;
-    background: url('images/card_title1.png') top / cover;
-}
-.teachingBx2 > .mdl-card__title {
-    color: #000;
-    height: 200px;
-    background: url('images/card_title2.png') top / cover;
-}
-.teachingBx3 > .mdl-card__title {
-    color: #000;
-    height: 200px;
-    background: url('images/card_title3.png') bottom / cover;
-}
-.teachingBx4 > .mdl-card__title {
-    color: #000;
-    height: 200px;
-    background: url('images/card_title4.png') bottom / cover;
-}
-.teachingList{
-    margin: 0 50px;
-    width: 90%;
-}
-.teachingListHead{
-    font-family: 'Rozha One', serif;
+.teachingHead2{
+    font-size: 18px;
+    font-weight: 500;
+    color: #030303;
+    line-height: 1.25;
+    font-family: 'Rubik', sans-serif;
 }
 .teachingListTxt{
-    font-family: 'IBM Plex Serif', serif;
+    font-family: 'Rubik', sans-serif;
 }
-.cardGrid1{
-    display: grid;
-    grid-template-columns: 85% 15%;
+.teachingContentBx1{
+    grid-column: 1;
+    grid-row: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex-box;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 327px;
 }
-#examplePdf{
-    width: 80%;
-    margin-right: 20%;
-    cursor: pointer;
+.teachingContentBx2{
+    grid-column: 2;
+    grid-row: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex-box;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 327px;
 }
-.pdfIconBx{
-    width: 50%;
-    margin: 0 25%;
+.teachingContentBxY{
+    background-color: #f4e7e7;
 }
-.iconExample{
+.teachingContentBxW{
+    background-color: #ffffff;
+}
+.teachingContentBxL{
+    text-align: left;
+}
+.teachingContentBxR{
+    text-align: right;
+}
+.teachingContentBx{
     height: auto;
     max-width: unset;
     vertical-align: middle;
-    width: 100%;
+    width: calc(100% - 60px);
+    margin: 0 30px;
 }
-.iconExampleTxt{
-    font-size: 18px;
-    text-align: center;
+.pdfLinkTxt{
+    font-size: 16px;
+    color: #0645AD;
+    cursor: pointer;
+    text-decoration: underline !important;
 }
-.cardGrid2{
-    display: grid;
-    grid-template-columns: 40% 30% 30%;
+.moreList1, .moreList2, .hideList{
+    display: none;
 }
-#listBx{
-    grid-column: 1;
-    grid-row: 1;
+.showList{
+    display: block !important;
 }
 #photoBx1{
-    grid-column: 2;
-    grid-row: 1;
-    margin-right: 50px;
     display:-webkit-box;
     display:-ms-flexbox;
     display:flex-box;
@@ -188,9 +203,6 @@ div{
     text-align:center;
 }
 #photoBx2{
-    grid-column: 3;
-    grid-row: 1;
-    margin-right: 50px;
     display:-webkit-box;
     display:-ms-flexbox;
     display:flex-box;

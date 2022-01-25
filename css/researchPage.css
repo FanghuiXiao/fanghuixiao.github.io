@@ -101,7 +101,7 @@ div{
     left: 15%;
     font-size: 20px;
     line-height: 1.6;
-    font-family: 'IBM Plex Serif', serif;
+    font-family: 'Rubik', sans-serif;
     text-align: justify;
 }
 #researchIndexOutBx{
@@ -155,7 +155,7 @@ div{
 }
 .projectTitleBx{
     font-size: 20px;
-    font-family: 'IBM Plex Serif', serif;
+    font-family: 'Rubik', sans-serif;
     font-weight: bolder;
     margin: 50px 10% 10px 10%;
 }
@@ -173,16 +173,19 @@ div{
 .tagTxt{
     margin-left: 5px;
     margin-right: 10px;
-    font-size: 18px;
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
 }
 .subTitleBx{
-    font-size: 18px;
-    font-weight: bolder;
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+    /*font-weight: bolder;*/
     margin: 10px 10% 15px 10%;
     display: inline-flex;
 }
 .subTitleBx2{
-    font-size: 18px;
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
     color: #e58536;
     margin: 10px 10% 15px 10%;
 }
@@ -283,10 +286,13 @@ div{
     margin: 0 0 0 50px;
     word-break: break-word;
     align-self: center;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.4;
-    font-family: 'IBM Plex Serif', serif;
+    font-family: 'Rubik', sans-serif;
     text-align: justify;
+}
+.projectTxt2{
+    text-indent:25px;
 }
 .paddingBx{
     height: 20px;
