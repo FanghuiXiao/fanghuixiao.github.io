@@ -29,7 +29,7 @@ function popupLink(id) {
             pageUrl = "https://drive.google.com/file/d/1Syj2jPMkbO9s_-nZOCgmvde9Xye_B9b4/view?usp=sharing";
             break;
         case "cvPdf":
-            pageUrl = "https://drive.google.com/file/d/1BH1gLwEF_YUTUv6v9d8aeOADogTvEUgv/view?usp=sharing";
+            pageUrl = "https://drive.google.com/file/d/1cPT_uv0AzEPA5zxaV7RW_Zhwst2gdho3/view?usp=sharing";
             break;
         case "diversityPdf":
             pageUrl = "https://drive.google.com/file/d/1z1QFW_MjV2OHsXnXC6H40zBua_OB_enS/view?usp=sharing";
