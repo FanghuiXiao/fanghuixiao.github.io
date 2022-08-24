@@ -29,13 +29,13 @@ function popupLink(id) {
             pageUrl = "https://drive.google.com/file/d/1Syj2jPMkbO9s_-nZOCgmvde9Xye_B9b4/view?usp=sharing";
             break;
         case "cvPdf":
-            pageUrl = "https://drive.google.com/file/d/1UmS1Tf_beKuRM59eF-Y2Wl29pd5NIS9E/view?usp=sharing";
+            pageUrl = "https://drive.google.com/file/d/1NEYw2xYUxZ3CdHfZEsRonLqUT7lhjobp/view?usp=sharing";
             break;
         case "diversityPdf":
             pageUrl = "https://drive.google.com/file/d/1z1QFW_MjV2OHsXnXC6H40zBua_OB_enS/view?usp=sharing";
             break;
         case "researchPdf":
-            pageUrl = "https://drive.google.com/file/d/1X6h0bR_rjGc6TsPg_9rC_I0F8qoA4Mci/view?usp=sharing";
+            pageUrl = "https://drive.google.com/file/d/1-MXe-GASKftLP5Q5pqnjuiG2v_XBT_zU/view?usp=sharing";
             break;
         case "pub1":
             pageUrl = "https://dl.acm.org/doi/abs/10.1145/3406522.3446007";
