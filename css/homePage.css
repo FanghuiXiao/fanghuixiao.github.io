@@ -68,14 +68,13 @@ div{
     background: white;
 }
 #introBx{
-    width: 100%;
     background-color: #fbf7f7;
     padding: 40px 100px;
 }
 #intro{
-    width: calc(100% - 200px);
+    padding: 0 50px;
     display: grid;
-    grid-template-columns: 35% auto;
+    grid-template-columns: 250px auto;
 }
 #photoBx{
     grid-column: 1;
@@ -102,24 +101,25 @@ div{
     direction: ltr;
     grid-column: 2;
     grid-row: 1;
-    margin: 0px 50px;
+    margin-left: 50px;
 }
 .introNameTxt{
-    margin-bottom: 16px;
+    margin: 16px 0;
     align-self: center;
-    font-size: 40px;
+    font-size: 54px;
     font-weight: bolder;
-    text-align: center;
     line-height: 1.6;
     font-family: 'Rozha One', serif;
 }
-.introTxt{
+.introTxt,.detailTxt{
+     word-break: break-word;
+     align-self: center;
+     font-size: 16px;
+     line-height: 1.6;
+     font-family: 'Rubik', sans-serif;
+ }
+.detailTxt{
     margin-top: 40px;
-    word-break: break-word;
-    align-self: center;
-    font-size: 16px;
-    line-height: 1.6;
-    font-family: 'Rubik', sans-serif;
     text-align: justify;
 }
 #mottoBx{

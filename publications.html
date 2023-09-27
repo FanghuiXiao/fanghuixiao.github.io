@@ -8,6 +8,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
     <meta name="viewport" content="user-scalable=no">
     <meta name="viewport" content="initial-scale=1,maximum-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="css/material.min.css">
     <link rel="stylesheet" href="css/publicationPage.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -20,7 +21,6 @@
     <script>
         window.onscroll = function() {scrollFunction()};
         function scrollFunction() {
-            //console.log(document.getElementById("mbody"));
             if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
                 document.getElementById("mhead").classList.add("header_bar");
                 Array.from(document.getElementsByClassName("mButton")).forEach(
@@ -71,6 +71,9 @@
             </div>
             <div class="pubIconOutBx">
                 <div class='pubIconBx'>
+                    <div id="pubIcon5">
+                        <img class='pubIconImg' src="css/images/publication5.png">
+                    </div>
                     <div id="pubIcon1">
                         <img class='pubIconImg' src="css/images/publication1.png">
                     </div>
@@ -80,9 +83,6 @@
                     <div id="pubIcon3">
                         <img class='pubIconImg' src="css/images/publication3.png">
                     </div>
-                    <div id="pubIcon4">
-                        <img class='pubIconImg' src="css/images/publication4.png">
-                    </div>
                 </div>
             </div>
             <div class='pubContentBx'>
@@ -90,53 +90,63 @@
                     <tbody>
                     <tr id="pub1" onClick="popupLink(this.id);">
                         <td class="mdl-data-table__cell--non-numeric">1</td>
-                        <td class="pubColumn2 mdl-data-table__cell--non-numeric">CHIIR 2021</td>
-                        <td class="mdl-data-table__cell--non-numeric">Xiao, F., (2021). Toward a conceptual model for users' online open government data interaction. In Proceedings of the 2021 Conference on Human Information Interaction and Retrieval (CHIIR '21). Association for Computing Machinery, New York, NY, USA, 355~358.</td>
+                        <td class="pubColumn2 mdl-data-table__cell--non-numeric">JASIS&T 2023</td>
+                        <td class="mdl-data-table__cell--non-numeric">Xiao. F., Chi. Y., & He, D (2023). Promoting Data Use through Understanding User Behaviors: A Model for Human Open Government Data Interaction. Journal of the Association for Information Science and Technology (JASIS). DOI: https://doi.org/10.1002/asi.24831.</td>
                     </tr>
                     <tr id="pub2" onClick="popupLink(this.id);">
                         <td class="mdl-data-table__cell--non-numeric">2</td>
-                        <td class="mdl-data-table__cell--non-numeric">ASIS&T 2021</td>
-                        <td class="mdl-data-table__cell--non-numeric">Ma, R., & Xiao, F. (2021). What is a good visualization for digital humanities researchers? An exploratory study. Proceedings of the Annual Meeting of the Association for Information Science and Technology 58 (1).</td>
+                        <td class="mdl-data-table__cell--non-numeric">CHI 2022</td>
+                        <td class="mdl-data-table__cell--non-numeric">Xiao, F., Thaker, K., & He, D. (2022, April). Categorizing Open Government Data Users by Exploring their Challenges and Proficiency. In CHI Conference on Human Factors in Computing Systems Extended Abstracts (pp. 1-7).</td>
                     </tr>
                     <tr id="pub3" onClick="popupLink(this.id);">
                         <td class="mdl-data-table__cell--non-numeric">3</td>
-                        <td class="mdl-data-table__cell--non-numeric">ASIS&T 2020</td>
-                        <td class="mdl-data-table__cell--non-numeric">Xiao, F., Wang, Z., & He, D. (2020). Understanding users' accessing behaviors to local Open Government Data via transaction log analysis. Proceedings of the Association for Information Science and Technology, 57(1), e278.</td>
+                        <td class="pubColumn2 mdl-data-table__cell--non-numeric">CHIIR 2021</td>
+                        <td class="mdl-data-table__cell--non-numeric">Xiao, F., (2021). Toward a conceptual model for users' online open government data interaction. In Proceedings of the 2021 Conference on Human Information Interaction and Retrieval (CHIIR '21). Association for Computing Machinery, New York, NY, USA, 355~358.</td>
                     </tr>
                     <tr id="pub4" onClick="popupLink(this.id);">
                         <td class="mdl-data-table__cell--non-numeric">4</td>
-                        <td class="mdl-data-table__cell--non-numeric">ASIS&T 2020</td>
-                        <td class="mdl-data-table__cell--non-numeric">Xiao, F., Ma, R., & He, D. (2020). Task_based human_structured research data interaction: A discipline independent examination. Proceedings of the Association for Information Science and Technology, 57(1), e308.</td>
+                        <td class="mdl-data-table__cell--non-numeric">ASIS&T 2021</td>
+                        <td class="mdl-data-table__cell--non-numeric">Ma, R., & Xiao, F. (2021). What is a good visualization for digital humanities researchers? An exploratory study. Proceedings of the Annual Meeting of the Association for Information Science and Technology 58 (1).</td>
                     </tr>
                     <tr id="pub5" onClick="popupLink(this.id);">
                         <td class="mdl-data-table__cell--non-numeric">5</td>
-                        <td class="mdl-data-table__cell--non-numeric">IJDC 2020</td>
-                        <td class="mdl-data-table__cell--non-numeric">Ma, R., & Xiao, F. (2020). Data practices in digital history. International Journal of Digital Curation 15 (1). https://doi.org/10.2218/ijdc.v15i1.597.</td>
+                        <td class="mdl-data-table__cell--non-numeric">ASIS&T 2020</td>
+                        <td class="mdl-data-table__cell--non-numeric">Xiao, F., Wang, Z., & He, D. (2020). Understanding users' accessing behaviors to local Open Government Data via transaction log analysis. Proceedings of the Association for Information Science and Technology, 57(1), e278.</td>
                     </tr>
                     <tr id="pub6" onClick="popupLink(this.id);">
                         <td class="mdl-data-table__cell--non-numeric">6</td>
-                        <td class="mdl-data-table__cell--non-numeric">PervasiveHealth 2020</td>
-                        <td class="mdl-data-table__cell--non-numeric">Chi, Y., He, D., Xiao, F., & Zou, N. (2020). Connections and disconnections between online health information seeking and offline consequences. In Proceedings of the 14th EAI international conference on pervasive computing technologies for healthcare (pp. 73-84).</td>
+                        <td class="mdl-data-table__cell--non-numeric">ASIS&T 2020</td>
+                        <td class="mdl-data-table__cell--non-numeric">Xiao, F., Ma, R., & He, D. (2020). Task_based human_structured research data interaction: A discipline independent examination. Proceedings of the Association for Information Science and Technology, 57(1), e308.</td>
                     </tr>
                     <tr id="pub7" onClick="popupLink(this.id);">
                         <td class="mdl-data-table__cell--non-numeric">7</td>
-                        <td class="mdl-data-table__cell--non-numeric">JCDL 2020</td>
-                        <td class="mdl-data-table__cell--non-numeric">Zhang, H., Zhang, Y., Xin, Q., & Xiao, F. (2020). Contemporary Chinese Village Gazetteer Data Project: From Books to Data. In Proceedings of the ACM/IEEE Joint Conference on Digital Libraries in 2020 (pp. 559-560).</td>
+                        <td class="mdl-data-table__cell--non-numeric">IJDC 2020</td>
+                        <td class="mdl-data-table__cell--non-numeric">Ma, R., & Xiao, F. (2020). Data practices in digital history. International Journal of Digital Curation 15 (1). https://doi.org/10.2218/ijdc.v15i1.597.</td>
                     </tr>
                     <tr id="pub8" onClick="popupLink(this.id);">
                         <td class="mdl-data-table__cell--non-numeric">8</td>
-                        <td class="mdl-data-table__cell--non-numeric">CHIIR 2019 Best short paper award</td>
-                        <td class="mdl-data-table__cell--non-numeric">Xiao, F., He, D., Chi, Y., Jeng, W., & Tomer, C. (2019). Challenges and supports for accessing open government datasets: Data guide for better open data access and uses. In Proceedings of the 2019 Conference on Human Information Interaction and Retrieval (pp. 313-317). ACM.</td>
+                        <td class="mdl-data-table__cell--non-numeric">PervasiveHealth 2020</td>
+                        <td class="mdl-data-table__cell--non-numeric">Chi, Y., He, D., Xiao, F., & Zou, N. (2020). Connections and disconnections between online health information seeking and offline consequences. In Proceedings of the 14th EAI international conference on pervasive computing technologies for healthcare (pp. 73-84).</td>
                     </tr>
                     <tr id="pub9" onClick="popupLink(this.id);">
                         <td class="mdl-data-table__cell--non-numeric">9</td>
-                        <td class="mdl-data-table__cell--non-numeric">ASIS&T 2018</td>
-                        <td class="mdl-data-table__cell--non-numeric">Xiao, F., Jeng, W., & He, D. (2018). Investigating metadata adoptions for open government data portals in US cities. Proceedings of the Association for Information Science and Technology, 55(1), 573-582.</td>
+                        <td class="mdl-data-table__cell--non-numeric">JCDL 2020</td>
+                        <td class="mdl-data-table__cell--non-numeric">Zhang, H., Zhang, Y., Xin, Q., & Xiao, F. (2020). Contemporary Chinese Village Gazetteer Data Project: From Books to Data. In Proceedings of the ACM/IEEE Joint Conference on Digital Libraries in 2020 (pp. 559-560).</td>
                     </tr>
                     <tr id="pub10" onClick="popupLink(this.id);">
                         <td class="mdl-data-table__cell--non-numeric">10</td>
+                        <td class="mdl-data-table__cell--non-numeric">CHIIR 2019 Best short paper award</td>
+                        <td class="mdl-data-table__cell--non-numeric">Xiao, F., He, D., Chi, Y., Jeng, W., & Tomer, C. (2019). Challenges and supports for accessing open government datasets: Data guide for better open data access and uses. In Proceedings of the 2019 Conference on Human Information Interaction and Retrieval (pp. 313-317). ACM.</td>
+                    </tr>
+                    <tr id="pub11" onClick="popupLink(this.id);">
+                        <td class="mdl-data-table__cell--non-numeric">11</td>
+                        <td class="mdl-data-table__cell--non-numeric">ASIS&T 2018</td>
+                        <td class="mdl-data-table__cell--non-numeric">Xiao, F., Jeng, W., & He, D. (2018). Investigating metadata adoptions for open government data portals in US cities. Proceedings of the Association for Information Science and Technology, 55(1), 573-582.</td>
+                    </tr>
+                    <tr id="pub12" onClick="popupLink(this.id);">
+                        <td class="mdl-data-table__cell--non-numeric">12</td>
                         <td class="mdl-data-table__cell--non-numeric">IJDC 2018</td>
-                        <td class="mdl-data-table__cell--non-numeric">Xiao. F., Lyon. L, Zou. N., and Gradeck. R. (2018). Emerging Roles for Optimising Re-Use of Open Government Data. International Journal of Digital Curation 13 (1). DOI: https://doi.org/10.2218/ijdc.v13i1.609</td>
+                        <td class="mdl-data-table__cell--non-numeric">Xiao. F., Lyon. L, Zou. N., and Gradeck. R. (2018). Emerging Roles for Optimising Re-Use of Open Government Data. International Journal of Digital Curation 13 (1).</td>
                     </tr>
                     </tbody>
                 </table>

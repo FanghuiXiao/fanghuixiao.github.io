@@ -106,7 +106,7 @@ div{
 
 }
 .cvImgBx{
-    width: 60%;
+    width: 50%;
     margin: 0 auto;
 }
 .cvImg{
@@ -117,7 +117,7 @@ div{
     cursor: pointer;
 }
 .cvTxt{
-    font-size: 24px;
+    font-size: 20px;
     line-height: 1.25;
     margin-top: 20px;
     text-align: center;
@@ -126,7 +126,7 @@ div{
 }
 .mottoBx{
     width: 100%;
-    padding: 100px 0px 50px 0px;
+    padding: 0px 0px 50px 0px;
 }
 .mottoBxInner{
     width: 855px;
